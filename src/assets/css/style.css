@@ -1,0 +1,37 @@
+/*============================== 
+            Fonts CSS 
+==============================*/
+@import url("../css/fonts.css");
+/*============================== 
+            Colors
+==============================*/
+/*============================== 
+            Common Style 
+==============================*/
+* {
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.84);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  line-height: 2em;
+  background-color: #fffcf7 !important;
+}
+
+/*============================== 
+            Loader
+==============================*/
+.loader {
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+}
+/*# sourceMappingURL=style.css.map */

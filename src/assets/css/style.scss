@@ -1,0 +1,43 @@
+/*============================== 
+            Fonts CSS 
+==============================*/
+
+@import url("../css/fonts.css");
+
+/*============================== 
+            Colors
+==============================*/
+$white-color: #fff;
+$black-color: #202020;
+$primary-color: #eecb06;
+
+/*============================== 
+            Common Style 
+==============================*/
+
+* {
+	position: relative;
+	-webkit-user-select: none;
+	user-select: none;
+}
+body {
+	font: {
+        family: 'Poppins', sans-serif !important;
+        size: 14px;
+    }
+    color: rgba(0,0,0,.84);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2em;
+	background-color: rgb(255, 252, 247) !important;
+}
+
+
+/*============================== 
+            Loader
+==============================*/
+.loader {
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.5)
+}
