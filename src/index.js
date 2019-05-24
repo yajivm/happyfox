@@ -1,10 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Router from './router';
 import * as serviceWorker from './serviceWorker';
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+import logger from 'redux-logger';
+import AppReducer from './reducer';
+import Router from './router';
+
+let middleware = applyMiddleware(thunk,logger);
+let store = createStore(AppReducer,middleware);
 
 ReactDOM.render(
-    <Router />, 
+    <Provider store={store}>
+        <Router/>
+    </Provider>, 
     document.getElementById('root')
 );
 
