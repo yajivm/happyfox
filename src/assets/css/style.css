@@ -281,7 +281,7 @@ nav .semi-bold-txt {
   color: #fff;
   padding: 1px 18px;
   border-radius: 3px;
-  font-size: 14px;
+  font-size: 14px !important;
   cursor: pointer;
 }
 
@@ -390,6 +390,11 @@ nav .semi-bold-txt {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin: 1rem 1rem;
   padding: 0 0 0.5rem;
+}
+
+.formModal input {
+  max-width: 95%;
+  margin: 0 auto;
 }
 
 .formModal textarea {
